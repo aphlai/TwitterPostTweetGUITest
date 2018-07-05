@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-06-29T13:23:06Z" name="Suite" finished-at="2018-06-29T13:23:06Z" duration-ms="57">
+    <groups>
+    </groups>
+    <test started-at="2018-06-29T13:23:06Z" name="Test" finished-at="2018-06-29T13:23:06Z" duration-ms="57">
+      <class name="TweetTest.TweetTestMain">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:TweetTest.TweetTestMain@fa36558]" started-at="2018-06-29T13:23:06Z" name="beforeClass" finished-at="2018-06-29T13:23:06Z" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:TweetTest.TweetTestMain@fa36558]" started-at="2018-06-29T13:23:06Z" name="f" finished-at="2018-06-29T13:23:06Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TweetTest.TweetTestMain@fa36558]" started-at="2018-06-29T13:23:06Z" name="afterClass" finished-at="2018-06-29T13:23:06Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TweetTest.TweetTestMain -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

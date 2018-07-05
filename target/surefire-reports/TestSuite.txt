@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 751.243 sec <<< FAILURE! - in TestSuite
+mainTest(TweetTest.TweetTestMain)  Time elapsed: 750.025 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.AssertionError: Newly post message should appear in the main page stream list expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at TweetTest.TweetTestMain.mainTest(TweetTestMain.java:25)
+Caused by: java.lang.AssertionError: Newly post message should appear in the main page stream list expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at StepDefinitions.TweetTestStepDefinition.findNewTweetMsgs(TweetTestStepDefinition.java:199)
+	at ✽.And the new Tweets are shown in the main page stream list(TweetTest.feature:77)
+

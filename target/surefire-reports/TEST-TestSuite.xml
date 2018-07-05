@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="750.025" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="9.0.1+11"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/Anthony/eclipse-workspace/TweetTest"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="NZ"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/Anthony/eclipse-workspace/TweetTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="9.0.1+11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/apache-maven-3.5.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/Anthony/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/apache-maven-3.5.3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="53.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.13.5"/>
+    <property name="library.jansi.path" value="/opt/apache-maven-3.5.3/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/Anthony"/>
+    <property name="user.timezone" value="Pacific/Auckland"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="9"/>
+    <property name="user.name" value="Anthony"/>
+    <property name="java.class.path" value="/opt/apache-maven-3.5.3/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="9"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="9.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/apache-maven-3.5.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="mainTest" classname="TweetTest.TweetTestMain" time="750.025">
+    <failure message="java.lang.AssertionError: Newly post message should appear in the main page stream list expected [true] but found [false]" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.AssertionError: Newly post message should appear in the main page stream list expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at TweetTest.TweetTestMain.mainTest(TweetTestMain.java:25)
+Caused by: java.lang.AssertionError: Newly post message should appear in the main page stream list expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at StepDefinitions.TweetTestStepDefinition.findNewTweetMsgs(TweetTestStepDefinition.java:199)
+	at ✽.And the new Tweets are shown in the main page stream list(TweetTest.feature:77)
+</failure>
+    <system-out><![CDATA[#Author: anthony0lai@gmail.com
+#Keywords Summary :
+#Feature: Post Tweet test in Twitter
+@PosLoginTest
+Feature: Post new Tweet after login
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+
+  @funcTest
+  Scenario: Post a single Tweet                                      &amp#27;[90m# TweetTest.feature:17&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                         &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI type Tweet messsage "&amp#27;[0m&amp#27;[32m&amp#27;[1mMy 1st Tweet&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m             &amp#27;[90m# TweetTestStepDefinition.postSingleTweet(String,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweet was sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    # Do I need to mention that I need to click to refresh
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweet is shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m                  &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweet is shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m          &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+
+  @funcTest
+  Scenario: Post a Tweet with Hashtag in message                     &amp#27;[90m# TweetTest.feature:26&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                         &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI type Tweet messsage "&amp#27;[0m&amp#27;[32m&amp#27;[1mMy #AuomationTest Tweet&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m  &amp#27;[90m# TweetTestStepDefinition.postSingleTweet(String,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweet was sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweet in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m&amp#27;[32m has &amp#27;[0m&amp#27;[32m&amp#27;[1mHashtag&amp#27;[0m               &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgLink(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweet in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m&amp#27;[32m has &amp#27;[0m&amp#27;[32m&amp#27;[1mHashtag&amp#27;[0m       &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgLink(String,String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+
+  @funcTest
+  Scenario: Post a Tweet mentioned another Tweet user in message                    &amp#27;[90m# TweetTest.feature:34&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                        &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI type Tweet messsage "&amp#27;[0m&amp#27;[32m&amp#27;[1mI watch notification from @AklTransport&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.postSingleTweet(String,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweet was sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m                &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweet in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m&amp#27;[32m has &amp#27;[0m&amp#27;[32m&amp#27;[1muser mentioned&amp#27;[0m                       &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgLink(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweet in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m&amp#27;[32m has &amp#27;[0m&amp#27;[32m&amp#27;[1muser mentioned&amp#27;[0m               &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgLink(String,String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+
+  @negTest
+  Scenario: Cancel posting a Tweet                                      &amp#27;[90m# TweetTest.feature:42&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                            &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI type Tweet messsage "&amp#27;[0m&amp#27;[32m&amp#27;[1mMessage to be cancelled&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mbut not&amp#27;[0m&amp#27;[32m submit&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.postSingleTweet(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click close tweet popup button&amp#27;[0m                                &amp#27;[90m# TweetTestStepDefinition.closeTweetPopup()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthere will be dialog box with header "&amp#27;[0m&amp#27;[32m&amp#27;[1mDiscard this Tweet?&amp#27;[0m&amp#27;[32m"&amp#27;[0m     &amp#27;[90m# TweetTestStepDefinition.waitForDialogbox(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click &amp#27;[0m&amp#27;[32m&amp#27;[1mconfirm&amp#27;[0m&amp#27;[32m button in dialog box&amp#27;[0m                            &amp#27;[90m# TweetTestStepDefinition.clickDialogBoxButton(String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+
+  @negTest
+  Scenario: Post repeated Tweet using exactly the same message will not be allowed           &amp#27;[90m# TweetTest.feature:50&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                                 &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI type Tweet messsage "&amp#27;[0m&amp#27;[32m&amp#27;[1mMessage to be duplicated&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m                          &amp#27;[90m# TweetTestStepDefinition.postSingleTweet(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweet was sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m                          &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI post a new Tweet with duplicated message content&amp#27;[0m                                  &amp#27;[90m# TweetTestStepDefinition.postDuplicatedTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1mpersistent &amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYou have already sent this Tweet.&amp#27;[0m&amp#27;[32m"&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtext message in the tweet popup is maintained&amp#27;[0m                                        &amp#27;[90m# TweetTestStepDefinition.checkTweetBoxMsgMaintained()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI append "&amp#27;[0m&amp#27;[32m&amp#27;[1m-- append message&amp#27;[0m&amp#27;[32m" to my Tweet message and submit&amp#27;[0m                          &amp#27;[90m# TweetTestStepDefinition.appendToExistingTweetMsg(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweet was sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m                          &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweet is shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m                                          &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweet is shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m                                  &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+
+  @funcTest
+  Scenario: Post message chain with multiple Tweets                    &amp#27;[90m# TweetTest.feature:63&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                           &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m Tweets with messege "&amp#27;[0m&amp#27;[32m&amp#27;[1mMultiple messages&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m    &amp#27;[90m# TweetTestStepDefinition.postMultiTweets(int,String,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweets were sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweets are shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m          &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweets are shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m                  &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m is shown replied by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.checkReplyCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m is shown replied by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.checkReplyCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m is shown replied by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.checkReplyCount(int,int,String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+
+  @advTest
+  Scenario: Post message chain and immediately switch to another page to read the Tweets(will fail) &amp#27;[90m# TweetTest.feature:74&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                                        &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m Tweets with messege "&amp#27;[0m&amp#27;[32m&amp#27;[1mMultiple messages&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m                                 &amp#27;[90m# TweetTestStepDefinition.postMultiTweets(int,String,String)&amp#27;[0m
+    &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mthe new Tweets are shown in &amp#27;[0m&amp#27;[31m&amp#27;[1mthe main page stream list&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: Newly post message should appear in the main page stream list expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:96)
+      	at org.testng.Assert.failNotEquals(Assert.java:776)
+      	at org.testng.Assert.assertTrue(Assert.java:44)
+      	at StepDefinitions.TweetTestStepDefinition.findNewTweetMsgs(TweetTestStepDefinition.java:199)
+      	at ✽.And the new Tweets are shown in the main page stream list(TweetTest.feature:77)
+      &amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mthe new Tweets are shown in &amp#27;[0m&amp#27;[36m&amp#27;[1mmy own Tweet list&amp#27;[0m                                               &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mnew Tweet&amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m is shown replied by &amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m follower in &amp#27;[0m&amp#27;[36m&amp#27;[1mmy own Tweet list&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.checkReplyCount(int,int,String)&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mnew Tweet&amp#27;[0m&amp#27;[36m&amp#27;[1m2&amp#27;[0m&amp#27;[36m is shown replied by &amp#27;[0m&amp#27;[36m&amp#27;[1m1&amp#27;[0m&amp#27;[36m follower in &amp#27;[0m&amp#27;[36m&amp#27;[1mmy own Tweet list&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.checkReplyCount(int,int,String)&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mnew Tweet&amp#27;[0m&amp#27;[36m&amp#27;[1m3&amp#27;[0m&amp#27;[36m is shown replied by &amp#27;[0m&amp#27;[36m&amp#27;[1m0&amp#27;[0m&amp#27;[36m follower in &amp#27;[0m&amp#27;[36m&amp#27;[1mmy own Tweet list&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.checkReplyCount(int,int,String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+Stale
+
+  @funcTest
+  Scenario: Like Tweets                                                  &amp#27;[90m# TweetTest.feature:84&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                             &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m Tweets with messege "&amp#27;[0m&amp#27;[32m&amp#27;[1mLike message test&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m      &amp#27;[90m# TweetTestStepDefinition.postMultiTweets(int,String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweets were sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m    &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click like in new Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m         &amp#27;[90m# TweetTestStepDefinition.likeTweetWithMsgIndex(int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click like in new Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m                  &amp#27;[90m# TweetTestStepDefinition.likeTweetWithMsgIndex(int,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe new Tweets are shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m           &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmain page stream list&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmain page stream list&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mBut &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmain page stream list&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe new Tweets are shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m                    &amp#27;[90m# TweetTestStepDefinition.findNewTweetMsgs(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m     &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m     &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mBut &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m     &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+Stale
+Stale
+
+  @funcTest
+  Scenario: Unlike Tweets                                                       &amp#27;[90m# TweetTest.feature:100&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m Tweets with messege "&amp#27;[0m&amp#27;[32m&amp#27;[1mLike and unlike messages test&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.postMultiTweets(int,String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweets were sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m           &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click like in new Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m                &amp#27;[90m# TweetTestStepDefinition.likeTweetWithMsgIndex(int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click like in new Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m                         &amp#27;[90m# TweetTestStepDefinition.likeTweetWithMsgIndex(int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click like in new Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m                 &amp#27;[90m# TweetTestStepDefinition.likeTweetWithMsgIndex(int,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmain page stream list&amp#27;[0m       &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mBut &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmain page stream list&amp#27;[0m        &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m            &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mBut &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m is shown liked by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m            &amp#27;[90m# TweetTestStepDefinition.checkTweetLikeCount(int,int,String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+
+  @funcTest
+  Scenario: Retweet an existing Tweet without further comment                       &amp#27;[90m# TweetTest.feature:113&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                        &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m Tweets with messege "&amp#27;[0m&amp#27;[32m&amp#27;[1mMessage to retweet&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m                &amp#27;[90m# TweetTestStepDefinition.postMultiTweets(int,String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweets were sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m               &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click retweet in new Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m&amp#27;[32m &amp#27;[0m&amp#27;[32m&amp#27;[1mwithout&amp#27;[0m&amp#27;[32m comment&amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.retweetWithMsgIndex(int,String,String,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m is shown retweeted by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.checkRetweetCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mBut &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m is shown retweeted by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m    &amp#27;[90m# TweetTestStepDefinition.checkRetweetCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mBut &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m is shown retweeted by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m    &amp#27;[90m# TweetTestStepDefinition.checkRetweetCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m is shown retweeted by &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m            &amp#27;[90m# TweetTestStepDefinition.checkRetweetCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mretweet label &amp#27;[0m&amp#27;[32m&amp#27;[1mis&amp#27;[0m&amp#27;[32m shown in Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m in my own Tweet list&amp#27;[0m                       &amp#27;[90m# TweetTestStepDefinition.checkRetweetLabel(String,int)&amp#27;[0m
+    &amp#27;[32mBut &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m is shown retweeted by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m            &amp#27;[90m# TweetTestStepDefinition.checkRetweetCount(int,int,String)&amp#27;[0m
+    &amp#27;[32mBut &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m is shown retweeted by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m            &amp#27;[90m# TweetTestStepDefinition.checkRetweetCount(int,int,String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+
+  @funcTest
+  Scenario: Retweet an existing Tweet with more comment                                      &amp#27;[90m# TweetTest.feature:127&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                                 &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m Tweets with messege "&amp#27;[0m&amp#27;[32m&amp#27;[1mMore messages to retweet&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m                   &amp#27;[90m# TweetTestStepDefinition.postMultiTweets(int,String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweets were sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m                        &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click retweet in new Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m&amp#27;[32m &amp#27;[0m&amp#27;[32m&amp#27;[1mwith&amp#27;[0m&amp#27;[32m comment&amp#27;[0m&amp#27;[32m&amp#27;[1m "[RT] test"&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.retweetWithMsgIndex(int,String,String,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mall new and retweeted messages are shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m                       &amp#27;[90m# TweetTestStepDefinition.findNewMsgWithReplies(String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mall new and retweeted messages are shown in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m               &amp#27;[90m# TweetTestStepDefinition.findNewMsgWithReplies(String)&amp#27;[0m
+
+  Background: User login and click compose Tweet button                        &amp#27;[90m# TweetTest.feature:8&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI go to the &amp#27;[0m&amp#27;[32m&amp#27;[1mTwitter&amp#27;[0m&amp#27;[32m login page&amp#27;[0m                                       &amp#27;[90m# TweetTestStepDefinition.inLoginPage(String)&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged in using &amp#27;[0m&amp#27;[32m&amp#27;[1mvalid&amp#27;[0m&amp#27;[32m credential&amp#27;[0m                              &amp#27;[90m# TweetTestStepDefinition.loginUsingCredential(String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click the Tweet button&amp#27;[0m                                              &amp#27;[90m# TweetTestStepDefinition.clickCreateNewTweet()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                    &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1mmore Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m   &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1msubmit Tweet&amp#27;[0m&amp#27;[32m button should be &amp#27;[0m&amp#27;[32m&amp#27;[1mdisabled&amp#27;[0m&amp#27;[32m as the message content is empty&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.submitTweetButtonStatus(String,String)&amp#27;[0m
+Stale
+
+  @funcTest
+  Scenario: Reply an existing Tweet (Will fail on counter check)                     &amp#27;[90m# TweetTest.feature:136&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPopup "&amp#27;[0m&amp#27;[32m&amp#27;[1mCompose new Tweet&amp#27;[0m&amp#27;[32m" is shown&amp#27;[0m                                         &amp#27;[90m# TweetTestStepDefinition.isNewTweetPopupShown(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI add &amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m Tweets with messege "&amp#27;[0m&amp#27;[32m&amp#27;[1mMessages to be replied&amp#27;[0m&amp#27;[32m" &amp#27;[0m&amp#27;[32m&amp#27;[1mand&amp#27;[0m&amp#27;[32m submit&amp#27;[0m              &amp#27;[90m# TweetTestStepDefinition.postMultiTweets(int,String,String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthere will be &amp#27;[0m&amp#27;[32m&amp#27;[1m&amp#27;[0m&amp#27;[32mstatus message showing "&amp#27;[0m&amp#27;[32m&amp#27;[1mYour Tweets were sent.&amp#27;[0m&amp#27;[32m"&amp#27;[0m                &amp#27;[90m# TweetTestStepDefinition.waitForStatusMsg(String,String)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI click reply in new Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m2&amp#27;[0m&amp#27;[32m in &amp#27;[0m&amp#27;[32m&amp#27;[1mmy own Tweet list&amp#27;[0m&amp#27;[32m with message "&amp#27;[0m&amp#27;[32m&amp#27;[1mREPLY Here!&amp#27;[0m&amp#27;[32m"&amp#27;[0m &amp#27;[90m# TweetTestStepDefinition.replyWithMsgIdx(int,String,String)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mnew Tweet&amp#27;[0m&amp#27;[32m&amp#27;[1m3&amp#27;[0m&amp#27;[32m is shown replied by &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m&amp#27;[32m follower in &amp#27;[0m&amp#27;[32m&amp#27;[1mthe main page stream list&amp#27;[0m      &amp#27;[90m# TweetTestStepDefinition.checkReplyCount(int,int,String)&amp#27;[0m
+    &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mnew Tweet&amp#27;[0m&amp#27;[31m&amp#27;[1m2&amp#27;[0m&amp#27;[31m is shown replied by &amp#27;[0m&amp#27;[31m&amp#27;[1m2&amp#27;[0m&amp#27;[31m followers in &amp#27;[0m&amp#27;[31m&amp#27;[1mmy own Tweet list&amp#27;[0m              &amp#27;[90m# TweetTestStepDefinition.checkReplyCount(int,int,String)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: expected [2] but found [1]
+      	at org.testng.Assert.fail(Assert.java:96)
+      	at org.testng.Assert.failNotEquals(Assert.java:776)
+      	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+      	at org.testng.Assert.assertEquals(Assert.java:118)
+      	at org.testng.Assert.assertEquals(Assert.java:652)
+      	at org.testng.Assert.assertEquals(Assert.java:662)
+      	at StepDefinitions.TweetTestStepDefinition.checkReplyCount(TweetTestStepDefinition.java:115)
+      	at ✽.And new Tweet2 is shown replied by 2 followers in my own Tweet list(TweetTest.feature:142)
+      &amp#27;[0m
+
+&amp#27;[31mFailed scenarios:&amp#27;[0m
+&amp#27;[31mTweetTest.feature:74 &amp#27;[0m# Scenario: Post message chain and immediately switch to another page to read the Tweets(will fail)
+&amp#27;[31mTweetTest.feature:136 &amp#27;[0m# Scenario: Reply an existing Tweet (Will fail on counter check)
+
+12 Scenarios (&amp#27;[31m2 failed&amp#27;[0m, &amp#27;[32m10 passed&amp#27;[0m)
+163 Steps (&amp#27;[31m2 failed&amp#27;[0m, &amp#27;[36m4 skipped&amp#27;[0m, &amp#27;[32m157 passed&amp#27;[0m)
+12m29.350s
+
+java.lang.AssertionError: Newly post message should appear in the main page stream list expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at StepDefinitions.TweetTestStepDefinition.findNewTweetMsgs(TweetTestStepDefinition.java:199)
+	at ✽.And the new Tweets are shown in the main page stream list(TweetTest.feature:77)
+
+java.lang.AssertionError: expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at StepDefinitions.TweetTestStepDefinition.checkReplyCount(TweetTestStepDefinition.java:115)
+	at ✽.And new Tweet2 is shown replied by 2 followers in my own Tweet list(TweetTest.feature:142)
+
+]]></system-out>
+    <system-err><![CDATA[1530598375822	geckodriver	INFO	geckodriver 0.20.1
+1530598375842	geckodriver	INFO	Listening on 127.0.0.1:42918
+1530598376255	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.VIqh9XFTUORG"
+2018-07-03 18:12:58.470 plugin-container[5637:1097541] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8347, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:12:58.895 plugin-container[5638:1097564] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598379268	Marionette	INFO	Listening on port 56301
+1530598379344	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-07-03 18:12:59.448 plugin-container[5639:1097699] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x753f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+Jul 03, 2018 6:12:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1530598430303	geckodriver	INFO	geckodriver 0.20.1
+1530598430317	geckodriver	INFO	Listening on 127.0.0.1:3999
+1530598430353	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.qrKSYopbR4AP"
+2018-07-03 18:13:52.783 plugin-container[5650:1101387] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:13:53.115 plugin-container[5651:1101411] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x773b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598433494	Marionette	INFO	Listening on port 56981
+1530598433547	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:13:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:13:54.586 plugin-container[5652:1101534] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x783f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1530598476873	geckodriver	INFO	geckodriver 0.20.1
+1530598476885	geckodriver	INFO	Listening on 127.0.0.1:25258
+1530598476913	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.6HpCU82dVak0"
+2018-07-03 18:14:39.754 plugin-container[5660:1102802] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7647, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:14:40.095 plugin-container[5661:1102854] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7943, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598480611	Marionette	INFO	Listening on port 57674
+1530598480654	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:14:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:14:40.893 plugin-container[5662:1102991] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7443, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1530598525400	geckodriver	INFO	geckodriver 0.20.1
+1530598525414	geckodriver	INFO	Listening on 127.0.0.1:37876
+1530598525437	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.nsRvLZSaFRNj"
+2018-07-03 18:15:27.761 plugin-container[5676:1104261] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a4b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:15:28.206 plugin-container[5677:1104324] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8907, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598528708	Marionette	INFO	Listening on port 58366
+1530598528724	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:15:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:15:29.582 plugin-container[5679:1104563] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x733f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1530598554931	geckodriver	INFO	geckodriver 0.20.1
+1530598554945	geckodriver	INFO	Listening on 127.0.0.1:27107
+1530598555071	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.XgWvNEAO7915"
+2018-07-03 18:15:57.200 plugin-container[5689:1106085] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:15:57.525 plugin-container[5690:1106109] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8507, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598557835	Marionette	INFO	Listening on port 58690
+1530598557922	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:15:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:15:58.524 plugin-container[5691:1106236] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8e03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1530598615949	geckodriver	INFO	geckodriver 0.20.1
+1530598615965	geckodriver	INFO	Listening on 127.0.0.1:2831
+1530598616005	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.O29emfF82GRV"
+2018-07-03 18:16:58.764 plugin-container[5707:1109475] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8403, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:16:59.215 plugin-container[5708:1109518] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x744b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598619642	Marionette	INFO	Listening on port 60227
+2018-07-03 18:16:59.694 plugin-container[5709:1109645] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8203, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598619747	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:16:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1530598692657	geckodriver	INFO	geckodriver 0.20.1
+1530598692668	geckodriver	INFO	Listening on 127.0.0.1:11025
+1530598692691	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.uk4SxKwuwK3u"
+2018-07-03 18:18:14.995 plugin-container[5723:1113550] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x793f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:18:15.445 plugin-container[5724:1113579] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598695978	Marionette	INFO	Listening on port 61807
+1530598696089	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:18:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:18:16.167 plugin-container[5726:1113693] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1530598735597	geckodriver	INFO	geckodriver 0.20.1
+1530598735611	geckodriver	INFO	Listening on 127.0.0.1:7133
+1530598735638	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.pkWpuvJEbVTu"
+2018-07-03 18:18:57.943 plugin-container[5733:1115045] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f33, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:18:58.420 plugin-container[5734:1115096] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x873f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598738969	Marionette	INFO	Listening on port 62827
+1530598739008	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:18:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:18:59.242 plugin-container[5735:1115294] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7b43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598845985	geckodriver	INFO	geckodriver 0.20.1
+1530598845999	geckodriver	INFO	Listening on 127.0.0.1:13856
+1530598846025	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.pO9L6BuIuraO"
+2018-07-03 18:20:48.221 plugin-container[5764:1119240] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7807, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:20:48.532 plugin-container[5765:1119262] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7633, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598848964	Marionette	INFO	Listening on port 64635
+1530598849085	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:20:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:20:49.507 plugin-container[5766:1119375] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x883f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598926596	geckodriver	INFO	geckodriver 0.20.1
+1530598926609	geckodriver	INFO	Listening on 127.0.0.1:38693
+1530598926632	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.RrollAedSS3q"
+2018-07-03 18:22:08.719 plugin-container[5777:1122405] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8837, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:22:09.228 plugin-container[5778:1122429] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a47, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530598929713	Marionette	INFO	Listening on port 65393
+1530598929780	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:22:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:22:10.385 plugin-container[5779:1122541] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530599004658	geckodriver	INFO	geckodriver 0.20.1
+1530599004675	geckodriver	INFO	Listening on 127.0.0.1:42766
+1530599004801	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.BrYkFxmX76mr"
+2018-07-03 18:23:27.244 plugin-container[5790:1124704] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7c3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:23:27.564 plugin-container[5791:1124758] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8203, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530599007907	Marionette	INFO	Listening on port 49804
+1530599007994	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:23:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:23:29.065 plugin-container[5792:1124906] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x853f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530599071195	geckodriver	INFO	geckodriver 0.20.1
+1530599071209	geckodriver	INFO	Listening on 127.0.0.1:12608
+1530599071233	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-profile" "/var/folders/br/wmyhcn213fx4trmy_bjb7yt40000gn/T/rust_mozprofile.olzSLbGhGniM"
+2018-07-03 18:24:33.516 plugin-container[5801:1125581] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8643, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-07-03 18:24:33.854 plugin-container[5802:1125606] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1530599074419	Marionette	INFO	Listening on port 51585
+1530599074524	Marionette	WARN	TLS certificate errors will be ignored for this session
+Jul 03, 2018 6:24:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2018-07-03 18:24:34.675 plugin-container[5803:1125730] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x743f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+]]></system-err>
+  </testcase>
+</testsuite>
